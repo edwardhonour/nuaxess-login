@@ -53,33 +53,32 @@ export class NewSigninComponent implements OnInit {
      if (localStorage.getItem('uid')!==undefined) {
        //-- Super Admin
       if (localStorage.getItem('role')=="sadmin") { 
-          this._router.navigateByUrl('/sadmin'); 
-          location.replace('/#/sadmin');
+        location.replace('https://mynuaxess.com/nuaxess/#/sadmin');
+        }
+        if (localStorage.getItem('role')=="user") { 
+          location.replace('https://mynuaxess.com/nuaxess/#/sadmin');
         }
       //-- PEO Admnn
       if (localStorage.getItem('role')=="padmin") { 
           location.replace('https://mynuaxess.com/peo/#/sadmin');
         }
+      //-- Broker and Broker Admin
       if (localStorage.getItem('role')=="badmin") { 
-          this._router.navigateByUrl('/badmin'); 
-          location.replace('/#/badmin');
+        location.replace('https://mynuaxess.com/broker/#/sadmin');
         }
       if (localStorage.getItem('role')=="broker") { 
-          this._router.navigateByUrl('/badmin'); 
-          location.replace('/#/badmin');
-        }
+        location.replace('https://mynuaxess.com/broker/#/sadmin');
+      }
+      //-- Employer Admin
       if (localStorage.getItem('role')=="eadmin") { 
-          this._router.navigateByUrl('/eadmin'); 
-          location.replace('/#/eadmin');
+          location.replace('https://mynuaxess.com/employer/#/sadmin');
         }
+      //-- Employee (This Module)
       if (localStorage.getItem('role')=="employee") { 
           this._router.navigate(['/dashboard']) 
           location.replace('/#/dashboard');
         }
-      if (localStorage.getItem('role')=="user") { 
-          this._router.navigate(['/sadmin']) 
-          location.replace('/#/sadmin');
-        }
+
      }
 
 
