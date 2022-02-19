@@ -10,22 +10,9 @@ import { appConfig } from 'app/core/config/app.config';
 import { LayoutModule } from 'app/layout/layout.module';
 import { AppComponent } from 'app/app.component';
 import { appRoutes } from 'app/app.routing';
-//import { NgxTablePaginationModule } from 'ngx-table-pagination';
-//import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { MatButtonModule } from '@angular/material/button';
-//import { MatButtonToggleModule } from '@angular/material/button-toggle';
-//import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
-//import { MatMenuModule } from '@angular/material/menu';
-//import { MatProgressBarModule } from '@angular/material/progress-bar';
-//import { MatRippleModule } from '@angular/material/core';
-//import { MatSidenavModule } from '@angular/material/sidenav';
-//import { MatSortModule } from '@angular/material/sort';
-//import { MatTableModule } from '@angular/material/table';
-//import { MatTabsModule } from '@angular/material/tabs';
-//import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-//import { NgApexchartsModule } from 'ng-apexcharts';
 import { FuseNavigationModule } from '@fuse/components/navigation';
 import { FuseLoadingBarModule } from '@fuse/components/loading-bar';
 import { FuseFullscreenModule } from '@fuse/components/fullscreen/fullscreen.module';
@@ -41,12 +28,7 @@ import { SharedModule } from 'app/shared/shared.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { VerticalMenuComponent } from './nuaxess/vertical-menu/vertical-menu.component';
 import { TopMenuComponent } from './nuaxess/top-menu/top-menu.component';
-//import { MatChipsModule } from '@angular/material/chips';
-//import { MatDatepickerModule } from '@angular/material/datepicker';
-//import { MatMomentDateModule } from '@angular/material-moment-adapter';
-//import { MatSelectModule } from '@angular/material/select';
 import { FuseHighlightModule } from '@fuse/components/highlight';
-//import { FormsFieldsComponent } from 'app/modules/admin/ui/forms/fields/fields.component';
 import { UserEnrollComponent } from './nuaxess/user-enroll/user-enroll.component';
 import { FuseCardModule } from '@fuse/components/card';
 import { InvalidTokenComponent } from './nuaxess/invalid-token/invalid-token.component';
@@ -76,7 +58,6 @@ const routerConfig: ExtraOptions = {
         CoreModule,
         FuseModule,
         FuseConfigModule.forRoot(appConfig),
-  //      FuseMockApiModule.forRoot(mockApiServices),
         FuseFullscreenModule,
         FuseHighlightModule,
         FuseLoadingBarModule,
@@ -85,26 +66,9 @@ const routerConfig: ExtraOptions = {
         LayoutModule,
         LanguagesModule,
         MatButtonModule,
-//        MatChipsModule,
-//        MatFormFieldModule,
-//        MatButtonToggleModule,
-//        MatDividerModule,
         MatIconModule,
-//        MatMenuModule,
         MatInputModule,
-//        MatProgressBarModule,
-//        MatDatepickerModule,
- //       MatRippleModule,
- //       MatSidenavModule,
- //       MatSortModule,
- //       MatSelectModule,
- //       MatTableModule,
- //       MatTabsModule,
         MessagesModule,
- //       MatMomentDateModule,
- //       NgxTablePaginationModule,
- //       Ng2SearchPipeModule,
- //       NgApexchartsModule,
         NotificationsModule,
         RouterModule.forRoot(appRoutes, routerConfig),
         QuickChatModule,

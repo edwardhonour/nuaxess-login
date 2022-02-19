@@ -74,9 +74,8 @@ export class NewSigninComponent implements OnInit {
           location.replace('https://mynuaxess.com/employer/#/sadmin');
         }
       //-- Employee (This Module)
-      if (localStorage.getItem('role')=="employee") { 
-          this._router.navigate(['/dashboard']) 
-          location.replace('/#/dashboard');
+      if (localStorage.getItem('role')=="member") { 
+        location.replace('https://mynuaxess.com/member/#/dashboard');
         }
 
      }
