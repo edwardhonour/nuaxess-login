@@ -132,6 +132,10 @@ export class NewSigninComponent implements OnInit {
                 localStorage.setItem('uid',data.uid)
                 localStorage.setItem('role',data.role)
                 this.signIn()
+                if (data.role=="super") { 
+                  this._router.navigateByUrl('/sadmin'); 
+                  location.replace('https://mynuaxess.com/admin/#/sadmin');
+                }
                 if (data.role=="sadmin") { 
                     this._router.navigateByUrl('/sadmin'); 
                     location.replace('https://mynuaxess.com/nuaxess/#/sadmin');
