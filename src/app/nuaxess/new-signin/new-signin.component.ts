@@ -170,5 +170,16 @@ export class NewSigninComponent implements OnInit {
               }
             });
   }
+
+  getProfile(id: any, status: any) {
+    if (status=="Enrolled"||status=="enrolled"||status=="enrolling") {
+      window.open(
+        "https://myna-docs.com/api/get_quote_template.php?id="+id);
+    }  else {
+      window.open(
+        "https://myna-docs.com/api/get_quote_template.php?id="+id);
+    }
+  }
+
           
 }
